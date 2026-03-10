@@ -1,0 +1,41 @@
+*{
+    box-sizing: border-box;
+}
+
+html, body{
+    position:relative;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+#root{
+    position:relative;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+.wholePage{
+    display:flex;
+    position:relative;
+    width: 100%;
+    height: 100%;
+    background-color: lightblue;
+}
+
+.button{
+    width: 20%;
+    padding: 1%;
+    padding-left: 3%;
+    padding-right: 3%;
+    border-radius: 1rem;
+    border: 0.05rem solid black;
+    text-align: center;
+    color:black;
+    background-color: white;
+}
+
+.button:hover{
+    cursor: pointer;
+}

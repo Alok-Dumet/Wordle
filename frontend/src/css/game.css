@@ -1,0 +1,114 @@
+.gameContainer{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    height: 100%;
+}
+
+.gameContainer > div{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    min-width:40%;
+    height: 80%;
+    padding: 1%;
+    row-gap: 1%;
+    background-color: lightcoral;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    min-width:60%;
+    height: 70%;
+    gap: 0.2rem;
+    background-color: lightcoral;
+}
+
+.cell {
+    width:100%;
+    aspect-ratio: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: lightblue;
+}
+
+.cell.correct { background: green; color:white }
+.cell.present { background: goldenrod; color:white}
+.cell.absent  { background: gray; color:white}
+.cell.default  { background: lightblue;}
+
+.keyboard{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    width:100%;
+    height:30%;
+    row-gap: 0.2rem;
+}
+
+.keyboard > div{
+    display:flex;
+    width:100%;
+    height:33.33%;
+    column-gap: 0.2rem;
+}
+
+.keyboard > div + div{
+    width:90%;
+}
+
+.keyboard > div + div + div{
+    width:100%;
+}
+
+.keyboard > div + div + div > div{
+    display: flex;
+    width:70%;
+    column-gap: 0.2rem;
+}
+
+.letter{
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex:1;
+    border-radius: 0.5rem;
+    background-color: lightblue;
+}
+
+.letter.default {
+    background-color: lightblue;
+}
+
+.letter.absent {
+    background-color: gray;
+    color: white;
+}
+
+.letter.present {
+    background-color: goldenrod;
+    color: white;
+}
+
+.letter.correct {
+    background-color: green;
+    color: white;
+}
+
+.nonLetter{
+    cursor: pointer;
+    width:15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex:1;
+    padding-left: 1%;
+    padding-right: 1%;
+    border-radius: 0.5rem;
+    background-color: lightblue;  
+}
